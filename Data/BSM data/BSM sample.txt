@@ -1,0 +1,85 @@
+rec1value MessageFrame ::= {
+  messageId 20,
+  value BasicSafetyMessage : {
+    coreData {
+      msgCnt 0,
+      id '69427DE8'H,
+      secMark 11399,
+      lat 374065260,
+      long 1271023950,
+      elev 0,
+      accuracy {
+        semiMajor 0,
+        semiMinor 2,
+        orientation 18
+      },
+      transmission unavailable,
+      speed 0,
+      heading 80,
+      angle 127,
+      accelSet {
+        long 2001,
+        lat 2001,
+        vert -127,
+        yaw 0
+      },
+      brakes {
+        wheelBrakes '10000'B,
+        traction unavailable,
+        albs unavailable,
+        scs unavailable,
+        brakeBoost unavailable,
+        auxBrakes unavailable
+      },
+      size {
+        width 0,
+        length 0
+      }
+    },
+    partII {
+      {
+        partII-Id 0,
+        partII-Value VehicleSafetyExtensions : {
+          pathHistory {
+            initialPosition {
+              utcTime {
+                year 2020,
+                month 10,
+                day 7,
+                hour 9,
+                minute 2,
+                second 11399
+              },
+              long 1271023950,
+              lat 374065260,
+              elevation 0,
+              heading 80,
+              speed {
+                transmisson unavailable,
+                speed 0
+              },
+              posAccuracy {
+                semiMajor 0,
+                semiMinor 2,
+                orientation 18
+              }
+            },
+            currGNSSstatus '01101100'B,
+            crumbData {
+              {
+                latOffset 0,
+                lonOffset 0,
+                elevationOffset 0,
+                timeOffset 5
+              }
+            }
+          },
+          pathPrediction {
+            radiusOfCurve 32767,
+            confidence 0
+          }
+        }
+      }
+    }
+  }
+}
